@@ -1,0 +1,59 @@
+?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="bablusss" fetch="http://github.com/bablusss" />
+  
+  <!--remove-stuff-->
+  <remove-project name="LineageOS/android_packages_apps_Updater" />
+  <remove-project name="LineageOS/android_packages_apps_CellBroadcastReceiver" />
+
+  <!--remove-forked-->  
+  <remove-project name="LineageOS/android_frameworks_native" path= "frameworks/native" />
+  <remove-project name="LineageOS/android_frameworks_base" path="frameworks/base" />
+  <remove-project name="LineageOS/android_frameworks_av" path="frameworks/av" />
+  <remove-project name="LineageOS/android_packages_apps_Contacts" path="packages/apps/Contacts" />
+  <remove-project name="LineageOS/android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" />
+  <remove-project name="LineageOS/android_packages_apps_CMParts" path="packages/apps/CMParts" />
+  <remove-project name="LineageOS/android_packages_apps_Dialer" path="packages/apps/Dialer" />
+  <remove-project name="LineageOS/android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" />
+  <remove-project name="LineageOS/android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" />
+  <remove-project name="LineageOS/android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" path="packages/apps/Settings" />
+  <remove-project name="LineageOS/android_system_sepolicy" path="system/sepolicy" />
+  <remove-project name="LineageOS/android_vendor_cm" path="vendor/cm" />
+  <remove-project name="LineageOS/cm_platform_sdk" path="vendor/cmsdk" />
+  <remove-project name="LineageOS/android_packages_services_Telephony" />
+  <remove-project name="LineageOS/android_packages_services_Telecomm" />
+  <remove-project name="LineageOS/android_packages_providers_MediaProvider" />
+  <remove-project name="LineageOS/android_system_core" />
+  <remove-project name="LineageOS/android_packages_apps_FMRadio" />
+  <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
+  <remove-project name="LineageOS/android_packages_apps_Eleven" />
+  <remove-project name="LineageOS/android_packages_apps_Snap" />
+
+  <!--add-forked-->
+  <project name="android_frameworks_native" path="frameworks/native" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_frameworks_base" path="frameworks/base" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_frameworks_av" path="frameworks/av" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_Contacts" path="packages/apps/Contacts" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_CMParts" path="packages/apps/CMParts" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_Dialer" path="packages/apps/Dialer" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_ExactCalculator" path="packages/apps/ExactCalculator" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_PhoneCommon" path="packages/apps/PhoneCommon" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_Settings" path="packages/apps/Settings" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_system_sepolicy" path="system/sepolicy" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_vendor_cm" path="vendor/cm" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="cm_platform_sdk" path="vendor/cmsdk"  remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_services_Telephony" path="packages/services/Telephony" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_services_Telecomm" path="packages/services/Telecomm" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_system_core" path="system/core" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_FMRadio" path="packages/apps/FMRadio" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="LineageOS-eXtended/android_packages_apps_HnTLauncher" path="packages/apps/HnTLauncher" remote="LineageOS-eXtended" revision="cm-14.1" />
+  <project name="android_packages_apps_Eleven" path="packages/apps/Eleven" remote="bablusss" revision="cm-14.1+subs" />
+  <project name="android_packages_apps_Snap" path="packages/apps/Snap" remote="bablusss" revision="cm-14.1+subs" />
+
+  <!-- track ThemeInterfacer -->
+  <project path="packages/services/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" /> 
+</manifest>
