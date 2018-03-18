@@ -508,5 +508,8 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
 
   <include name="snippets/cm.xml" />
+  
+  <!-- OMS+HNT -->
+  <include name="snippets/oms+hnt.xml" />
 
 </manifest>
