@@ -6,7 +6,7 @@
   <remove-project name="LineageOS/android_packages_apps_Updater" />
   <remove-project name="LineageOS/android_packages_apps_CellBroadcastReceiver" />
 
-  <!--remove-forked-->  
+  <!--remove-los-repos-->  
   <remove-project name="LineageOS/android_frameworks_native" path= "frameworks/native" />
   <remove-project name="LineageOS/android_frameworks_base" path="frameworks/base" />
   <remove-project name="LineageOS/android_frameworks_av" path="frameworks/av" />
@@ -30,7 +30,7 @@
   <remove-project name="LineageOS/android_packages_apps_Eleven" />
   <remove-project name="LineageOS/android_packages_apps_Snap" />
 
-  <!--add-forked-->
+  <!--track-my-repos-->
   <project name="android_frameworks_native" path="frameworks/native" remote="bablusss" revision="cm-14.1+subs" />
   <project name="android_frameworks_base" path="frameworks/base" remote="bablusss" revision="cm-14.1+subs" />
   <project name="android_frameworks_av" path="frameworks/av" remote="bablusss" revision="cm-14.1+subs" />
